@@ -107,7 +107,7 @@ Begin VB.Form Form1
          Strikethrough   =   0   'False
       EndProperty
       Height          =   615
-      Left            =   0
+      Left            =   50
       TabIndex        =   0
       Top             =   0
       Width           =   1410
@@ -154,6 +154,21 @@ Private Sub Form_MouseMove(Button As Integer, Shift As Integer, X As Single, Y A
     End If
 End Sub
 
+Private Sub Label1_DblClick()
+        If (Form1.BackColor = vbRed) Then
+            Pocrveni (False)
+        End If
+
+    
+        Label1.Visible = False
+        'Label2.Visible = False 'ovo je exit button
+        lblStart.Visible = False
+        
+        Text1.Visible = True
+        lblPotvrdi.Visible = True
+        Timer1.Enabled = False
+End Sub
+
 Private Sub Label1_MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single) 'za pomicanje forme
     If Button = vbLeftButton Then
         mlngX = X
@@ -180,7 +195,7 @@ Private Sub Label1_MouseUp(Button As Integer, Shift As Integer, X As Single, Y A
 
     
         Label1.Visible = False
-        Label2.Visible = False
+        'Label2.Visible = False
         lblStart.Visible = False
         
         Text1.Visible = True
@@ -222,7 +237,7 @@ Private Sub lblPotvrdi_Click() 'stavi u novu variablu kod reseta
     Label1.Caption = Format(min, "00") + ":" + Format(sec, "00")
     
         Label1.Visible = True
-        Label2.Visible = True
+        'Label2.Visible = True 'exit button
         lblStart.Visible = True
         
         Text1.Visible = False
