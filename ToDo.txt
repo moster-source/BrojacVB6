@@ -1,0 +1,3 @@
+dvostruki klik da poziva unos minuta
+dodaj x i na formu za unos minuta
+pogledaj kad se ne unese nista a pokrene
