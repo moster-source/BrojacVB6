@@ -1,3 +1,4 @@
-dvostruki klik da poziva unos minuta
-dodaj x i na formu za unos minuta
-pogledaj kad se ne unese nista a pokrene
+Možda dodati prozirnost
+riješeno - dvostruki klik da poziva unos minuta
+riješeno - dodaj x i na formu za unos minuta
+riješeno - pogledaj kad se ne unese nista a pokrene
