@@ -216,16 +216,17 @@ Private Sub lblStart_Click() 'klik na start, i stop
         sec = 0
         min = minEntered
         Exit Sub
-    Else
+    Else                             'ako timer ne radi
         If Me.BackColor = vbRed Then
             Pocrveni (False)
         End If
         
+        If min = 0 Then Exit Sub     'izadji ako je start na 0 minuta ili neispravan unos
         
         sec = 59
         min = minEntered - 1
         Label1.Caption = Format(min, "00") + ":" + Format(sec, "00")
-        Timer1.Enabled = True 'ako nije pokrenut
+        Timer1.Enabled = True
     End If
     
 End Sub
