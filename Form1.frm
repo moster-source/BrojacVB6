@@ -267,8 +267,9 @@ Private Sub Timer1_Timer() 'svake sekunde pokreni
         End If
         If min = 0 Then 'beep na kraj
             MessageBeep (MB_DEFAULTBEEP)
-            Label1.Caption = Format(min, "00") + ":" + Format(sec, "00")
+            
             min = minEntered
+            Label1.Caption = Format(min, "00") + ":" + Format(sec, "00")
             Timer1.Enabled = False
             Pocrveni (True)
             Exit Sub
